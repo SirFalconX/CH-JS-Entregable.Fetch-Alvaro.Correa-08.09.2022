@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="title">
+        <h1>Cotizador de Vehículos</h1>
+    </header>
+    <main class="subtitle">
+        <form>   
+            <h2 class="brandtitle">Seleccione la marca del vehículo</h2>
+                <input type="radio" name="brand" value="Chevrolet">
+                <label>Chevrolet</label>
+                <input type="radio" name="brand" value="Renault">
+                <label>Renault</label>
+                <input type="radio" name="brand" value="Audi">
+                <label>Audi</label>
+        </form>
+        <section class="yearselect">
+            <h2>Escriba el año del vehículo (2022-2000)</h2>
+            <input type="number" name="year" placeholder="Año del vehículo..." id="year">
+        </section>
+        <section class="seguroSelector">
+            <h2>Seleccione el tipo de seguro</h2>
+            <label class="container2">Básico
+                <input type="radio" checked="checked" name="tipoSeguro" value="segBasico">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container2">Global
+                <input type="radio" checked="checked" name="tipoSeguro" value="segGlobal">
+                <span class="checkmark"></span>
+            </label>
+        </section>
+        <br><br>
+        <section class="result">
+            <button onclick="getCotizacion()" id="boton">COTIZAR</button> <!--"Class" se cambia a "id"-->
+        <!--    <h2>El resultado es de:</h2>
+            <output id="resultado"></output>
+            <label for="resultado"></label>
+        --></section>
+        <!--<section>
+            <div>
+                <input type="text" id="marca" name="marca">
+                <button id="boton" name="boton"> Cotizar </button>
+            </div>
+        </section>
+    --></main>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="miarchivo.js"> </script>
+</body>
+</html>
